@@ -1,0 +1,51 @@
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    cout << "\t143 by KATY PERRY Based on your ZODIAC SIGNS!!!!!!!\n"<<endl;
+    string zodiac;
+    cout << "Enter your zodiac sign: ";
+    cin >> zodiac;
+    
+    if (zodiac == "Aries" )
+        cout << "\t\"Gorgeous\"" << endl;
+        
+    else if (zodiac == "Taurus")
+        cout << "\t\"Crush\"" << endl;
+        
+    else if (zodiac == "Gemini")
+        cout << "\t\"Lifetimes\"" << endl;
+        
+    else if (zodiac == "Cancer")
+        cout << "\t\"Artificial\"" <<endl;
+        
+    else if (zodiac == "Leo")
+        cout << "\t\"Nirvana\""<<endl;
+        
+    else if (zodiac == "Virgo")
+        cout << "\t\"Wonder\"" << endl;
+        
+    else if (zodiac == "Libra")
+        cout << "\t\"Gimme Gimme\"" << endl;
+        
+    else if (zodiac == "Scorpio")
+        cout << "\t\"Womans's World\"" << endl;
+        
+    else if (zodiac == "Sagittarius")
+        cout << "\t\"All the Love\""<< endl;
+        
+    else if (zodiac == "Capricorn")
+        cout << "\t\"Truth\"" << endl;
+        
+    else if (zodiac == "Aquarius" && "Pisces")
+        cout << "\t\"Im His, He's Mine\"" << endl;
+        
+        
+    else
+    cout << "USER INPUT ERROR"<<endl;
+
+    return 0;
+}
