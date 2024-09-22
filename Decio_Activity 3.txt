@@ -1,0 +1,149 @@
+/* Kin Marcus S. Decio      Activity 3
+   Asst.Prof Michelle Decamora, MIT    CS-102-4 */
+#include <iostream>
+using namespace std;
+
+int month;
+int date;
+string name = ("\t----------------");
+
+int main()
+{
+    cout << "\t ZODIAC SIGN IDENTIFIER\n";
+    cout << "NOTE:Input BIRTH MONTH in its numerical form"<< endl;
+    cout << "Enter BIRTH MONTH (1-12): ";
+    cin  >> month;
+    cout << "Enter BIRTH DATE (1-31): ";
+    cin  >> date;
+    
+    //ARIES
+    if ((month == 3 && date >= 21 && date <= 31) 
+         || (month == 4 && date <= 19))
+       { 
+        cout << name << "\n Your Zodiac Sign is ARIES!\n" << name;
+        cout << "\t\nThe Aries zodiac symbol is the Ram" <<endl 
+             << "named for the stellar constellation this sign corresponded to"<<endl
+             << "by the astrologers of the old world. The astrological symbol" <<endl
+             << "of the Ram goes back to Babylonian times when it was associated with"<<endl
+             << "agriculture and the god of shepherds."<< endl; }
+        
+    // TAURUS
+    else if ((month == 4 && date >= 20 && date <= 30) 
+            || (month == 5 && date <= 20))
+       { 
+        cout << name << "\n Your Zodiac Sign is TAURUS!\n" << name;
+        cout << "\t\nThe human connection to the constellation of Taurus is very old,"<<endl
+             << "harking back to the early bronze age. The sign of the Bull's position"<<endl
+             << "in the sky in the Northern Hemisphere has been used by many ancient cultures"<<endl
+             << "for timekeeping to signal the original Spring Equinox. Taurus has been"<<endl
+             << "associated with blessing agriculture and marked the time to plow and plant vital"<<endl
+             << "crops for worshipping cultures"<<endl
+             << "like Sumeria, Babylon, Greece, Rome, and even New Mexico."<<endl;  }
+       
+        
+    // GEMINI
+    else if ((month == 5 && date >= 21 && date <= 31) 
+            || (month == 6 && date <= 20))
+        {    
+        cout << name << "\n Your Zodiac Sign is GEMINI!\n" << name;
+        cout << "The Gemini zodiac symbol of the Twins"<<endl
+             << "is based on the half brothers Castor and Pollux from Greek mythology."<<endl
+             << "These legendary brothers, also known as the Dioscuri,"<<endl
+             << "were the children of Leda, who was seduced by Zeus in the form of a swan."<<endl; }
+        
+    // CANCER
+    else if ((month == 6 && date >= 21 && date <= 30) 
+            || (month == 7 && date <= 22))
+       {     
+        cout << name << "\n Your Zodiac Sign is CANCER!\n" << name;
+        cout <<"\t\nIn Egyptian belief, it was associated with the scarab, the symbol of immortality."<<endl
+             << "The connection with the afterlife continues into Babylonian culture,"<<endl
+             << "where Cancer was thought to be the god that was the guide to the passage"<<endl
+             << "through the underworld and death." <<endl; }
+        
+    // lEO
+    else if ((month == 7 && date >= 23 && date <= 31) 
+            || (month == 8 && date <= 22))
+        {    
+        cout << name << "\n Your Zodiac Sign is LEO!\n" << name;
+        cout << "\t\nThe Leo zodiac symbol is the Lion, named for the stellar constellation"<<endl
+             << "this sign corresponded to by the astrologers of the old world."<<endl
+             << "The astrological symbol of the Lion goes back to Greek mythology, when it was"<<endl
+             << "associated with the Lion that Heracles overcame in a heroic mythological battle."<< endl; }
+        
+    // VIRGO
+    else if ((month == 8 && date >= 23 && date <= 31) 
+            || (month == 9 && date <= 22))
+        {    
+        cout << name <<"\n Your Zodiac Sign is VIRGO!\n" << name;
+        cout << "\t\nThe stellar constellation of Virgo has origins in Babylonian society,"<<endl
+             << "where it was associated with the goddess Shala, who was depicted holding an ear of grain."<<endl
+             << "To the Babylonians, this goddess ruled over fertility and the harvest,"<<endl
+             << "connecting Virgo to some of its earliest archetypal associations."<<endl; }
+        
+    // LIBRA
+    else if ((month == 9 && date >= 23  && date <= 30)
+            || (month == 10 && date <= 22))
+        {    
+        cout << name << "\n Your Zodiac Sign is LIBRA!\n" << name;
+        cout << "\t\nThe Libra zodiac symbol is the Scales, named for the stellar constellation"<<endl
+             << "this sign corresponded to by the astrologers of the old world."<<endl
+             << "The astrological symbol of the Scales is associated with the goddess Themis,"<<endl
+             << "who ruled over justice and the law."<<endl; }
+        
+    // SCORPIO
+    else if ((month == 10 && date >= 23 && date <= 31)
+            || (month == 11 && date <= 21))
+        {    
+        cout << name << "\n Your Zodiac Sign is SCORPIO!\n" << name;
+        cout << "\t\nThe constellation known as Scorpio goes back to Babylonian times, where"<<endl
+             << "it was called 'The creature with the burning sting.'"<<endl
+             << "Scorpio contains the red star Antares,"<<endl
+             << "which means 'The rival of Mars,' and is also called 'The heart of the Scorpion.'"<<endl; }
+        
+    // SAGUITTARIUS 
+    else if ((month == 11 && date >= 22 && date <= 30) 
+            || (month == 12 && date <= 21))
+        {    
+        cout << name << "\n Your Zodiac Sign is SAGUITTARIUS!\n" << name;
+        cout << "\t\nThe Sagittarius zodiac symbol of the Centaur"<<endl
+             << "is based on the Greek mythological association with Chiron,"<<endl
+             << "the great teacher of music, medicine, hunting, and prophecy."<<endl
+             << "Chiron healed the hero Achilles and mentored him"<<endl
+             << "in archery and many other great arts when he cared for him as a child."<<endl; }
+        
+    // CAPRICORN
+    else if ((month == 12 && date >= 22 && date <= 31) 
+            || (month == 1 && date <= 19))
+        {    
+        cout << name <<"\n Your Zodiac Sign is CAPRICORN!\n" << name;
+        cout << "\t\nThe stellar constellation of Capricorn represents the Sea-Goat,"<<endl
+             << "whose mythology extends back to the middle of the Bronze Age."<<endl
+             << "The Babylonians called the Sea-Goat Ea,"<<endl
+             << "who was the protective god of water, knowledge, and creation."<<endl; }
+        
+    // AQUARIUS
+    else if ((month == 1 && date >= 20 && date <= 31)
+            || (month == 2 && date <= 18))
+        {    
+        cout << name << "\n Your Zodiac Sign is AQUARIUS!\n" << name;
+        cout << "\t\nThe constellation of Aquarius, the Water-Bearer, is one of the oldest of our current zodiac."<<endl
+             << "Harking back to Babylonian times, the Aquarius constellation"<<endl
+             << "was associated with the protective god Ea, who carried an overflowing vase of water."<<endl; }
+        
+    // PISCES
+    else if ((month == 2 && date >= 19 && date <= 29)
+            || (month == 3 && date <= 20))
+        {
+        cout << name << "\n Your Zodiac Sign is PISCES!\n" << name;
+        cout << "\t\nPisces is the Latin word for 'fish',"<<endl
+             << "and in Greek mythology, this constellation represents"<<endl
+             << "the koi fish that saved Aphrodite and her son Eros from the sea monster Typhon."<<endl; }
+    
+    else
+       { cout << "\n UNKNOWN";
+         cout << "\n INPUT ERROR TRY AGAIN!!"; }
+        
+
+    return 0;
+}
